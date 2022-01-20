@@ -1,0 +1,32 @@
+h2{
+    color: green;
+}
+
+.autor{
+    color: blue;
+}
+
+a{
+    font-size: 4px;
+    color: cornflowerblue;
+}
+
+ul li{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+
+ol li{
+    font-size: 25px;
+    color: blue;
+    font-weight: bold;
+}
+
+img{
+    width: 500px;
+}
+
+button{
+    width: 500px;
+}

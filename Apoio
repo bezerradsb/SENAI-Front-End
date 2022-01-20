@@ -3,3 +3,23 @@
 1 - CSS Inline
 2 - CSS Interno
 3 - CSS Externo
+
+3 Formas de inserir cores no CSS, em sistemas.
+
+1 - Nome das cores (Inglês)
+
+2 - Escala RGB
+    RED     - 0 a 255 
+    GREEN   - 0 a 255
+    BLUE    - 0 a 255
+
+3 - Hexadecimal (#00FF00)
+    0 - F (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)
+    A = 10
+    B = 11
+    C = 12
+    D = 13
+    E = 14
+    F = 15
+
+    00 = 0          FF = 255

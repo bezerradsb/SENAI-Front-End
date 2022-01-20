@@ -1,0 +1,35 @@
+h1{
+    font-size: 16px;
+    color: black;
+    font-family: Calibri;
+}
+
+#profissao{
+    font-size: 11px;
+    color: black;
+    font-family: Calibri;
+    line-height: 0.5;
+}
+
+.idade{
+    font-size: 11px;
+    color: green;
+    font-family: Calibri;
+    line-height: 0.5;
+
+}
+
+h2, ul li{
+    font-size: 11px;
+    font-weight: lighter;
+    color: black;
+    font-family: Calibri;
+}
+
+
+strong{
+    font-size: 11px;
+    color: red;
+    font-family: Calibri;
+    line-height: 0.5;
+}

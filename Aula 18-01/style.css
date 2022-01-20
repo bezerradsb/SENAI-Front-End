@@ -1,0 +1,29 @@
+body{
+    margin: 0%;
+}
+
+.divisoria{
+    border: 3px solid #FF0000;
+    /*padding: 10px;*/                  /*Todos os lados iguais*/
+    /*padding: 10px 15px 10px 50px;*/   /*cima direita baixo esquerda*/
+    /*padding: 10px 15px;*/             /*cima/baixo direita/esquerda*/
+
+    /*padding-left: 10px;*/     /*esqueda*/
+    /*padding-top: 15px;*/      /*cima*/
+    /*padding-bottom: 50px;*/   /*baixo*/
+    /*padding-right: 100px;*/   /*direita*/
+}
+
+.principal{
+    background: #eeff04;
+    margin: 10px;
+    border: 5px solid #FF0000;
+    padding: 10px;
+}
+
+.imagem img{
+    border: 3px solid #eeff04;
+    padding: 25px;
+    margin: 10px;
+    width: 100px;
+}

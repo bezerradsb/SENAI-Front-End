@@ -1,0 +1,12 @@
+.link{
+    color: #00FF00;
+    font-size: 35px;
+}
+
+.link:hover{
+    color: #FF0000;
+}
+
+.link:visited{
+    color: #0000FF
+}
