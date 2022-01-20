@@ -1,0 +1,43 @@
+3 - Métodos de Inserir o CSS no HTML
+
+1 - CSS Inline
+2 - CSS Interno
+3 - CSS Externo
+
+3 Formas de inserir cores no CSS, em sistemas.
+
+1 - Nome das cores (Inglês)
+
+2 - Escala RGB
+    RED     - 0 a 255 
+    GREEN   - 0 a 255
+    BLUE    - 0 a 255
+
+3 - Hexadecimal (#00FF00)
+    0 - F (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)
+    A = 10
+    B = 11
+    C = 12
+    D = 13
+    E = 14
+    F = 15
+
+    00 = 0          FF = 255
+
+Aula do dia 20-01:
+
+Negrito:
+<b></b> -> Normal
+<strong></strong> -> Semântica importante. Utilizado para acessibilidade, pois lê com mais ênfase.
+
+Itálico:
+<i></i> -> Normal
+<em></em> -> Semântica importante. Utilizado para acessibilidade.
+
+Outras tags:
+<small></small> -> deixa menor que o resto do texto.
+<big></big> -> deixa maior que o resto do texto.
+<del></del> -> deixa o texto riscado.
+<mark></mark> -> marca o texto. Por padrão é amarelo, mas pode ser mudado no CSS com o background-color.
+<sup></sup> -> texto de exponencial.
+<sub></sub> -> texto menor.
