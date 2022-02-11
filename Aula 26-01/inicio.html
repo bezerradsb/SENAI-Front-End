@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset=""/>
+        <title>Formulário</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <!-- Inicio do corpo do HTML-->
+    <body>
+        <h1>Página de Formulário:</h1>
+        <form action="pagina/login.html"    method="GET">
+            <label>Nome:</label><input type="text" name="nomeCompleto" value="Insira o nome completo"/>
+            <label>E-mail:</label><input type="email" name="email" />
+            <br><br>
+            <label>Cor:</label><input type="color" name="cor" />
+            <br><br>
+            <label>Data:</label><input type="date" name="data" />
+            <label>Data-Local:</label><input type="datetime-local" name="datatime-local" />
+            <label>Mês:</label><input type="month" name="month" />
+            <label>Semana:</label><input type="week" name="semana" />
+            <br><br>
+            <label>Barra:</label><input type="range" name="barra" />
+            <br><br>
+            <label>Pesquisa:</label><input type="search" name="pesquisa" />
+            <label>Telefone:</label><input type="tel" name="Telefone" />
+            <label>URL:</label><input type="url" name="url" />
+            <br><br>
+            <select name="filtro" id="">
+                <option>Maior Preço</option>
+                <option>Menor Preço</option>
+                <option>Maior Desconto</option>
+                <option>Menor Desconto</option>
+
+            </select>
+            <br><br>
+            <textarea></textarea>
+            
+            <input type="image"/>
+            <br><br>
+            <input type="submit" name="Salvar"/>
+        </form>
+    </body><!-- Fim do corpo do HTML-->
+
+</html>

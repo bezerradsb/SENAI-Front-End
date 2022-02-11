@@ -1,0 +1,53 @@
+html{
+    background-color: #e7e7e7;
+}
+
+body {
+    max-width: max-content;
+    align-items: center;
+    margin: auto;
+}
+
+body form{
+    width: 700px;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+input, textarea, button{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+select{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+fieldset{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+fieldset legend{
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+label{
+    font-weight: bold;
+}
+
+p{
+    text-align: center;
+    margin: 0;
+}
+
+button{
+    background-color: #00FF00;
+}

@@ -1,0 +1,48 @@
+body{
+    font-family: Arial;
+    margin: 15px;
+    padding: auto;
+}
+
+h1{
+    font-size: 20px;
+    margin: 0;
+}
+
+p, footer{
+    font-size: 10.5px;
+}
+
+p strong{
+    padding-left: 50px;
+}
+
+.imagem img{
+    margin: 10px 100px;
+}
+
+.imagem small{
+    font-size: 8.5px;
+    margin: 0 250px;
+}
+
+.green{
+    background-color: rgb(19, 218, 35);
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.pink{
+    background-color: rgb(238, 12, 208);
+}
+
+.white{
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}

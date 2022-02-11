@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset=""/>
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <!-- Inicio do corpo do HTML-->
+    <body>
+        <h1>Cadastro de Currículo:</h1>
+        <form action="pagina/login.html"    method="GET">
+            <fieldset class="pessoal">
+                <legend>Dados Pessoais:</legend>
+                <label>Nome Completo:</label>
+                <input type="text" name="nomeCompleto" placeholder="Insira o nome completo" maxlength="100" required/>
+                <label>Data de Nascimento:</label>
+                <input type="date" name="data" min="2004-02-06" required/>
+                <label>E-mail:</label>
+                <input type="email" name="email" required/>
+                <label>Celular:</label>
+                <input type="number" name="celular" required/>
+                <label>Endereço:</label>
+                <input type="text" name="endereco" required/>
+                <label>CEP:</label>
+                <input type="text" name="cep" maxlength="8" required/>
+            </fieldset>
+            <fieldset class="escolar">
+                <legend>Dados Escolares:</legend>
+                    <fieldset>
+                        <legend>Curso 1:</legend>
+                        <label>Nome do Curso:</label><input type="text" name="curso1"/>
+                        <label>Carga Horária (h):</label><input type="number" name="horasCurso1"/>
+                        <label>Mês / Ano de Conclusão:</label><input type="month" name="mesCurso1" min="2015-02"/>
+                    </fieldset>    
+                    <fieldset>
+                        <legend>Curso 2:</legend>
+                        <label>Nome do Curso:</label><input type="text" name="curso2"/>
+                        <label>Carga Horária (h):</label><input type="number" name="horasCurso2"/>
+                        <label>Mês / Ano de Conclusão:</label><input type="month" name="mesCurso2" min="2015-02"/>
+                    </fieldset>    
+                    <fieldset>
+                        <legend>Curso 3:</legend>
+                        <label>Nome do Curso:</label><input type="text" name="curso3"/>
+                        <label>Carga Horária (h):</label><input type="number" name="horasCurso3"/>
+                        <label>Mês / Ano de Conclusão:</label><input type="month" name="mesCurso3" min="2015-02"/>
+                    </fieldset>    
+            </fieldset>
+            <fieldset class="profissional">
+                <legend>Dados Profissionais:</legend>
+                    <fieldset>
+                        <legend>Empresa  1:</legend>
+                        <label>Nome do Empresa</label><input type="text" name="empresa1"/>
+                        <label>Atual? (Sim/Não)*</label>
+                        <select>
+                            <option value="sim">Sim</option>    
+                            <option value="nao">Não</option>    
+                        </select>
+                        <br>
+                        <label>Tempo de Trabalho</label><input type="text" name="tempoEmpresa1"/>
+                        <label>Cargo</label><input type="text" name="cargoEmpresa1"/>
+                        <label>Descrição das Atividades</label><textarea name="descricaoEmpresa1" placeholder="Fale um pouco sobre as atividades que você desenvolvia na empresa..."></textarea>
+                    </fieldset>    
+                    <fieldset>
+                        <legend>Empresa  2:</legend>
+                        <label>Nome do Empresa</label><input type="text" name="empresa2"/>
+                        <label>Atual? (Sim/Não)*</label>
+                        <select name="atual2">
+                            <option value="sim">Sim</option>    
+                            <option value="nao">Não</option>    
+                        </select>
+                        <br>
+                        <label>Tempo de Trabalho</label><input type="text" name="tempoEmpresa2"/>
+                        <label>Cargo</label><input type="text" name="cargoEmpresa2"/>
+                        <label>Descrição das Atividades</label><textarea name="descricaoEmpresa2" placeholder="Fale um pouco sobre as atividades que você desenvolvia na empresa..."></textarea>
+                    </fieldset>    
+                    <fieldset>
+                        <legend>Empresa 3:</legend>
+                        <label>Nome do Empresa</label><input type="text" name="empresa3"/>
+                        <label>Atual? (Sim/Não)*</label>
+                        <select name="atual3">
+                            <option value="sim">Sim</option>    
+                            <option value="nao">Não</option>    
+                        </select>
+                        <br>
+                        <label>Tempo de Trabalho</label><input type="text" name="tempoEmpresa3"/>
+                        <label>Cargo</label><input type="text" name="cargoEmpresa3"/>
+                        <label>Descrição das Atividades</label><textarea name="descricaoEmpresa3" placeholder="Fale um pouco sobre as atividades que você desenvolvia na empresa..."></textarea>
+                    </fieldset>    
+            </fieldset>
+            <p>Concordo com o envio das informações</p><input class="t" type="checkbox" name="concordar" checked="cheked" required="required"/>
+            <button type="submit">Enviar</button>
+        </form>
+    </body><!-- Fim do corpo do HTML-->
+
+</html>
