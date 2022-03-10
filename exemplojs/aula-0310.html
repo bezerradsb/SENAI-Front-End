@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula dia 10.03</title>
+</head>
+<body>
+    <span id="nome-escola">Nome da Escola ???</span>, clique nas interrogações... <br>
+    <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.write('O alfabeto > ${text} tem ${text.length} letras.');
+        let tx1 = "SENAI Front-END";
+        document.write('usando a function slice ${tx1.slice(6,10)}');
+        document.getElementById('nome-escola').addEventListener("click", mostrarNome);
+        function mostrarNome(){
+            console.log("Função Funcionando");
+            let tx = document.getElementById("nome-escola").innerHTML;
+            document.getElementById("nome-escola").innerHTML = tx.toLocaleUpperCase().replace("???","SENAI");
+        }
+    </script>
+</body>
+</html>
