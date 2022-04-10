@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Objeto JS</title>
+</head>
+
+<body>
+    <script>
+        let car = {
+            namne: "Fiat",
+            model: "Palio",
+            weight: "1000kg",
+            color: "red",
+            km: 80,
+            move: function (addKm) {
+                this.km += addKm
+            },
+            status: function () {
+                return `<br>Dados do carro:
+                        <br>Marca: ${car.namne}
+                        <br>Modelo: ${car.model}
+                        <br>Cor: ${car.color}
+                        <br>Peso: ${car.weight}
+                        <br>KM: ${car.km}
+                        <br>`;
+            }
+        }
+        document.write(JSON.stringify(car));
+        document.write(car.status());
+        car.move(20);
+        car.color = "azul";
+        document.write(car.status());
+
+    </script>
+    <br>
+    Lista de Marcas em um Array...
+    <br>
+    <script>
+        let lsCar = ["Fiat", "Ferrari", "Lamborghini", "Alfa Romeu"];
+        document.write(lsCar);
+        let i = 0;
+        document.write(`<br>A Marca que está no indice ${i} = ${lsCar[i]}.`);
+        document.write(`<br>Modificar a marca do Indice ${i} para BMW.`);
+        lsCar[i] = "BMW";
+        document.write(`<br>A marca que está no indice ${i} = ${lsCar[i]}.`);
+        document.write('<br>'+lsCar);
+        document.write(`<br> A lista de marcas tem um total de ${lsCar.length}`);
+        document.write(`<br> A primeira Marca é ${lsCar[0]}`);
+        document.write(`<br> A última marca é ${lsCar[lsCar.length-1]}`);
+        
+
+        lsCar.push("Buggati");
+        lsCar.push("Porshe");
+        let texto = "<ul>";
+            for(let j = 0; j < lsCar.length; j++){
+                document.write(j);
+                document.write(lsCar[j]);
+                texto += (`<li>[${j}]${lsCar[j]}</li>`);
+            }
+            texto += '</ul>';
+            document.write(texto);
+    </script>
+</body>
+
+</html>

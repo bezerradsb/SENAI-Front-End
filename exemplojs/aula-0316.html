@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula-0316</title>
+</head>
+<body>
+        <div id="demo"></div>
+        <script>
+            let alunos = ["adasdsada"]
+
+            function lacoForEach(){
+                let texto = "Exemplo com forEach() <br><ul>";
+                    alunos.forEach(listarAlunos);
+                    texto += "</ul";
+                    function listarAlunos(value){
+                        texto += `<li>${value.toUpperCase()}</li>`;
+                    }
+                    document.getElementById("demo").innerHTML = texto;
+            }
+            let texto = "Exemplo com for <br><ul>";
+                for (i = 0; i < 4; i++){
+                    alert(`essa é a mensagem ${i}`);
+                }
+        </script>
+</body>
+</html>

@@ -10,9 +10,9 @@
     <span id="nome-escola">Nome da Escola ???</span>, clique nas interrogações... <br>
     <script>
         let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        document.write('O alfabeto > ${text} tem ${text.length} letras.');
+        document.write(`O alfabeto > ${text} tem ${text.length} letras.`);
         let tx1 = "SENAI Front-END";
-        document.write('usando a function slice ${tx1.slice(6,10)}');
+        document.write(`usando a function slice ${tx1.slice(6,10)}`);
         document.getElementById('nome-escola').addEventListener("click", mostrarNome);
         function mostrarNome(){
             console.log("Função Funcionando");

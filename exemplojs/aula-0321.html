@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula do dia 21/03</title>
+</head>
+<body>
+
+    <button onclick="gerarCpf()">Gerar CPF</button>
+    <button onclick="alert(validarCpf(prompt('Digite um cpf!')))" >Validar CPF</button>
+    <script>
+        // laço de repetição do 10 até 2
+        // while
+
+        function gerarCpf() {
+            let cpf = [];
+            for (let i = 0; i < 9; i++) {
+                cpf[i] = Math.floor(Math.random() * 10);
+
+            }
+            let dig = calcDigito(0, cpf);
+            cpf[9] = dig;
+            dig = calcDigito(1, cpf);
+            cpf[10] = dig;
+            console.log(cpf);
+            alert(cpf.toString().replaceAll(',',''))
+        }
+
+
+        // validarCpf("14538220620");
+        // alert(validarCpf(prompt("Digite um cpf!")));
+        function validarCpf(txtCpf) {
+            let cpf = txtCpf.split("");
+            let dig1 = calcDigito(0, cpf);
+            let dig2 = calcDigito(1, cpf);
+            if (cpf[9] == dig1 && cpf[10] == dig2) {
+                console.log("Válido");
+                return true;
+            } else {
+                console.log("Inválido");
+                return false;
+            }
+        }
+        function calcDigito(d, cpf) {
+            let i = 10 + d;
+            let j = 0;
+            let soma = 0;
+            while (i >= 2) {
+                soma += cpf[j] * i;
+                console.log(`${i} ${j + 1} ${cpf[j]} ${soma}`);
+                i--;
+                j++;
+            }
+            let dig = 11 - (soma % 11);
+            if (dig >= 10) {
+                dig = 0;
+            }
+            console.log(dig);
+            return dig;
+        }
+
+    </script>
+</body>
+</html>

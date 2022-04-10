@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Aula do dia 22/03</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Aula do dia 22/03/2022</h2>
+        <p>Exemplo de Paginação</p>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nome Aluno</th>
+                </tr>
+            </thead>
+            <tbody id="tbCorpo">
+
+            </tbody>
+        </table>
+        <ul class="pagination">
+        </ul>
+    </div>
+    <script>
+        let alunos = ["Alexandre Leastro Lemes Gonzaga", "André Albuquerque Gonçalves", "Aryna Noêmia Meireles de Sousa", "Beatriz Helena Ulian Coêlho", "Danielson Maciel da Costa", "Danilo de Souza Bezerra", "Dayana da Silva Correia", "Diogo Henrique Vieira Leite5 de mar.", "Edvando Junyor Sales de Oliveira", "FABRICIO ARAUJO DA SILVA", "Felipe Silva de Araujo", "Germanir Leal Santos", "Jorgean do Bomfim Paulino", "José Pereira Caetano", "Kacio de Sousa Meneses", "Leandro Almeida da Silva", "Lucas Antônio Cordeiro de Souza Melchior", "Lucas Luan Santos Araujo", "Lucas Silva Piedade", "Marcio Aquilles Monteles Silva", "Marcus Vinicius Freita Silva", "Matheus Felício Lima", "Rafaella Beatriz Guimarães Cardoso", "Rodolfo Rodrigues Francisco", "Suyanne Sara Miranda Silva", "Thamires de Jesus dos Santos", "Vanessa Gonçalves de Moura", "Wellington Oliveira Machado", "Wendell Baresi Santos de Oliveira"];
+        function carregaPg(n){
+            let txTabela = "";
+            let i = n * 5;
+            let f = i + 4;
+            while (i <= f) {
+                let aluno = (i >= alunos.length)?"&nbsp;":alunos[i];
+                txTabela += `<tr><td>${aluno}</td></tr>`;
+                i++;
+            }
+            document.getElementById("tbCorpo").innerHTML = txTabela;
+        }
+        carregaPg(0);
+        
+        let qtPagina = Math.ceil(alunos.length/5);
+        let listaPagina = "";
+        i = 1;
+        while (i <= qtPagina) {
+            listaPagina += `<li><a href="#" onclick="carregaPg(${i - 1})">${i}</a></li>`;
+            console.log(listaPagina);
+            i++;
+        }
+        listaPagina = 
+            `<li><a href="#" onclick="carregaPg(0)"><<</a></li>
+            <li><a href="#" onclick="carregaPg(0)"><</a></li>
+            ${listaPagina}
+            <li><a href="#" onclick="carregaPg(0)">></a></li>
+            <li><a href="#" onclick="carregaPg(${qtPagina-1})">>></a></li>`
+        document.getElementsByClassName("pagination")[0].innerHTML = listaPagina;
+    </script>
+</body>
+
+</html>
